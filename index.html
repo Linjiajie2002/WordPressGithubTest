@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 测试页面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>欢迎来到HTML测试页面</h1>
+  <button onclick="showMessage()">点击我</button>
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').innerText = "你点击了按钮！";
+    }
+  </script>
+
+</body>
+</html>
